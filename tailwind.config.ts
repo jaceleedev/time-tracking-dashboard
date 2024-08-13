@@ -62,14 +62,14 @@ const config: Config = {
           fontFamily: 'var(--font-rubik)',
           fontSize: '32px',
           fontStyle: 'normal',
-          fontWeight: '400',
+          fontWeight: '200',
           lineHeight: '38px',
         },
         '.text-previous': {
           fontFamily: 'var(--font-rubik)',
           fontSize: '15px',
           fontStyle: 'normal',
-          fontWeight: '400',
+          fontWeight: '300',
           lineHeight: '18px',
         },
       };
