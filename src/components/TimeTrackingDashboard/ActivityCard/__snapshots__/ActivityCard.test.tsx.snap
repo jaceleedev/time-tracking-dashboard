@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ActivityCard > matches snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="w-full h-40 rounded-[15px] bg-light-orange"
+  >
+    <div
+      class="relative h-[38px] overflow-hidden"
+    >
+      <img
+        alt=""
+        class="absolute right-[17.42px]"
+        data-nimg="1"
+        decoding="async"
+        height="78"
+        loading="lazy"
+        src="/images/icon-work.svg"
+        style="color: transparent;"
+        width="79"
+      />
+    </div>
+    <div
+      class="grid grid-cols-1 grid-rows-[22px_38px] gap-[6px] h-[122px] px-6 py-7 rounded-[15px] bg-dark-blue"
+    >
+      <div
+        class="flex justify-between items-center"
+      >
+        <h3
+          class="text-card-title text-white"
+        >
+          Work
+        </h3>
+        <img
+          alt=""
+          data-nimg="1"
+          decoding="async"
+          height="5"
+          loading="lazy"
+          src="/images/icon-ellipsis.svg"
+          style="color: transparent;"
+          width="21"
+        />
+      </div>
+      <div
+        class="flex justify-between items-center"
+      >
+        <p
+          class="text-hours text-white"
+        >
+          36hrs
+        </p>
+        <p
+          class="text-previous text-pale-blue"
+        >
+          Last Week - 40hrs
+        </p>
+      </div>
+    </div>
+  </article>
+</DocumentFragment>
+`;
