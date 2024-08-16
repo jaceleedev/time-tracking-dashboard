@@ -14,6 +14,7 @@ const config: Config = {
         'desaturated-blue': '#7078C9',
         'dark-blue': '#1C204B',
         'pale-blue': '#BBC0FF',
+        'twilight-blue': '#33397A',
         'very-dark-blue': '#0E1323',
         'light-orange': '#FF8B64',
         'soft-blue': '#55C2E6',
@@ -34,8 +35,12 @@ const config: Config = {
           fontFamily: 'var(--font-rubik)',
           fontSize: '24px',
           fontStyle: 'normal',
-          fontWeight: '400',
+          fontWeight: '300',
           lineHeight: '28px',
+          '@screen lg': {
+            fontSize: '40px',
+            lineHeight: '47.5px',
+          },
         },
         '.text-report-title': {
           fontFamily: 'var(--font-rubik)',
@@ -62,14 +67,18 @@ const config: Config = {
           fontFamily: 'var(--font-rubik)',
           fontSize: '32px',
           fontStyle: 'normal',
-          fontWeight: '200',
+          fontWeight: '300',
           lineHeight: '38px',
+          '@screen lg': {
+            fontSize: '56px',
+            lineHeight: '66px',
+          },
         },
         '.text-previous': {
           fontFamily: 'var(--font-rubik)',
           fontSize: '15px',
           fontStyle: 'normal',
-          fontWeight: '300',
+          fontWeight: '400',
           lineHeight: '18px',
         },
       };
