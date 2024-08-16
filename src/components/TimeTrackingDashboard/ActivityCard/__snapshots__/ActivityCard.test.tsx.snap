@@ -3,47 +3,52 @@
 exports[`ActivityCard > matches snapshot 1`] = `
 <DocumentFragment>
   <article
-    class="w-full h-40 rounded-[15px] bg-light-orange"
+    class="w-full h-40 rounded-[15px] bg-light-orange lg:h-[244px]"
   >
     <div
-      class="relative h-[38px] overflow-hidden"
+      class="relative h-[38px] overflow-hidden lg:h-[45px]"
     >
       <img
         alt=""
         class="absolute right-[17.42px]"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height="78"
-        loading="lazy"
         src="/images/icon-work.svg"
         style="color: transparent;"
         width="79"
       />
     </div>
     <div
-      class="grid grid-cols-1 grid-rows-[22px_38px] gap-[6px] h-[122px] px-6 py-7 rounded-[15px] bg-dark-blue"
+      aria-label="Work activity details"
+      class="grid grid-cols-1 grid-rows-[22px_auto] gap-[6px] h-[122px] px-6 py-7 rounded-[15px] bg-dark-blue hover:cursor-pointer transition-colors lg:gap-y-6 lg:h-[199px] lg:px-[30px] lg:pt-[29px] "
     >
-      <div
-        class="flex justify-between items-center"
+      <header
+        class="flex justify-between items-center relative z-10"
       >
         <h3
           class="text-card-title text-white"
         >
           Work
         </h3>
-        <img
-          alt=""
-          data-nimg="1"
-          decoding="async"
-          height="5"
-          loading="lazy"
-          src="/images/icon-ellipsis.svg"
-          style="color: transparent;"
-          width="21"
-        />
-      </div>
+        <button
+          aria-label="More options"
+        >
+          <img
+            alt=""
+            data-nimg="1"
+            decoding="async"
+            height="5"
+            loading="lazy"
+            src="/images/icon-ellipsis.svg"
+            style="color: transparent;"
+            width="21"
+          />
+        </button>
+      </header>
       <div
-        class="flex justify-between items-center"
+        class="flex justify-between items-center lg:flex-col lg:items-start lg:gap-y-2"
       >
         <p
           class="text-hours text-white"
