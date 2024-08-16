@@ -1,6 +1,5 @@
 import Image from 'next/image';
-
-type TimeframeOption = 'daily' | 'weekly' | 'monthly';
+import { TimeframeOption } from '@/types/dashboard';
 
 interface UserProfileCardProps {
   activeTimeframe: TimeframeOption;

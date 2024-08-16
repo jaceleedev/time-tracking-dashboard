@@ -1,30 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
-
-interface IconConfig {
-  src: string;
-  width: number;
-  height: number;
-  position: {
-    right: string;
-  };
-}
-
-interface TimeRecord {
-  current: number;
-  previous: number;
-}
-
-interface ActivityRecord {
-  title: string;
-  timeframes: {
-    daily: TimeRecord;
-    weekly: TimeRecord;
-    monthly: TimeRecord;
-  };
-}
-
-type TimeframeOption = 'daily' | 'weekly' | 'monthly';
+import { IconConfig, ActivityRecord, TimeframeOption } from '@/types/dashboard';
 
 interface ActivityCardProps {
   backgroundColor: string;

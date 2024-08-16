@@ -3,23 +3,8 @@
 import useSWR from 'swr';
 import ActivityCard from '@/components/TimeTrackingDashboard/ActivityCard';
 import UserProfileCard from '@/components/TimeTrackingDashboard/UserProfileCard';
+import { TimeframeOption, ActivityRecord } from '@/types/dashboard';
 import { useState } from 'react';
-
-type TimeframeOption = 'daily' | 'weekly' | 'monthly';
-
-interface TimeRecord {
-  current: number;
-  previous: number;
-}
-
-interface ActivityRecord {
-  title: string;
-  timeframes: {
-    daily: TimeRecord;
-    weekly: TimeRecord;
-    monthly: TimeRecord;
-  };
-}
 
 function getBackgroundColor(index: number): string {
   const colors = [
@@ -89,6 +74,7 @@ function getIconConfig(title: string): {
       },
     },
   };
+
   return iconConfigs[title as keyof typeof iconConfigs];
 }
 
