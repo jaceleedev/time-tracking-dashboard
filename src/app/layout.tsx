@@ -21,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rubik.variable}>{children}</body>
+      <body
+        className={`flex justify-center items-center w-screen min-h-screen bg-very-dark-blue ${rubik.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
