@@ -98,6 +98,7 @@ export default function Home() {
 
   return (
     <main className="grid grid-cols-1 gap-y-6 w-[327px] sm:grid-cols-2 sm:gap-x-5 sm:w-[620px] lg:grid-cols-4 lg:gap-[30px] lg:w-[1110px]">
+      <h1 className="sr-only">Time tracking dashboard</h1>
       <UserProfileCard
         activeTimeframe={activeTimeframe}
         onTimeframeChange={setActiveTimeframe}
