@@ -1,7 +1,14 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
-import { rubik } from '../src/app/layout';
+import { Rubik } from 'next/font/google';
 import '../src/app/globals.css';
+
+const rubik = Rubik({
+  subsets: ['latin'],
+  display: 'swap',
+  style: 'normal',
+  variable: '--font-rubik',
+});
 
 const preview: Preview = {
   parameters: {
