@@ -1,4 +1,6 @@
+import React from 'react';
 import type { Preview } from '@storybook/react';
+import { rubik } from '../src/app/layout';
 import '../src/app/globals.css';
 
 const preview: Preview = {
@@ -10,6 +12,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <div className={`${rubik.variable}`}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export default preview;
